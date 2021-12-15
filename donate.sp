@@ -21,7 +21,7 @@ public Action Print_Donation(int client, int args)
 {
     if (IsClientInGame(client) && !IsFakeClient(client)){
     	//Change Title and url params to the needed changes (Hardcoded because config is unecessary)
-        ShowMOTDPanel(client, "Donate Here", "Edit Here!", 2);
+        ShowMOTDPanel(client, "Donate Here", "Edit Url Here!", 2);
     }
     return Plugin_Handled;
 }
