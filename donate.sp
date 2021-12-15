@@ -5,10 +5,10 @@
 
 public Plugin myinfo = {
     name        = "DonatePopup",
-    author      = "Optical",
+    author      = "GuildedThorm",
     description = "A plugin that shows the donations links page in a web broweser after running !donate",
     version     = "1.0",
-    url         = "https://jailbreakexperience.com"
+    url         = "https://guildedthorn.com/"
 };
 
 public void OnPluginStart()
@@ -21,7 +21,7 @@ public Action Print_Donation(int client, int args)
 {
     if (IsClientInGame(client) && !IsFakeClient(client)){
     	//Change Title and url params to the needed changes (Hardcoded because config is unecessary)
-        ShowMOTDPanel(client, "Donate to the JailBreak eXperience", "https://jailbreakexperience.com/donate", 2);
+        ShowMOTDPanel(client, "Donate Here", "Edit Here!", 2);
     }
     return Plugin_Handled;
 }
